@@ -1,30 +1,23 @@
-.absolute-center {
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
-/* header {
-  height: 100vh;
-} */
-.rating-star {
-  fill: #FBDE6B !important;
-  -webkit-box-shadow: #f0f 0 0 0 1px;
-          box-shadow: #f0f 0 0 0 1px;
+html {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0D0F13;
+  color: #EBEDEF;
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media screen and (max-width: 768px) {
-  :root {
-    font-size: 13px;
-  }
+.pd-4 {
+  padding: 0.5rem 0.75rem;
+}
+
+.pd-8 {
+  padding: 1rem 1.5rem;
+}
+
+.pd-16 {
+  padding: 1.5rem 2rem;
 }
 /*# sourceMappingURL=styles.css.map */
