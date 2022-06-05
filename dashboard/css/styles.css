@@ -1,0 +1,30 @@
+.absolute-center {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+/* header {
+  height: 100vh;
+} */
+.rating-star {
+  fill: #FBDE6B !important;
+  -webkit-box-shadow: #f0f 0 0 0 1px;
+          box-shadow: #f0f 0 0 0 1px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
