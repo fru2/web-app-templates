@@ -1,0 +1,66 @@
+@use "../constants"as const;
+
+// FIXME: Use class or id selector instead of deep nested selectors. 
+
+// SECTION 1 ---------------------------
+main {
+  padding: 2rem;
+
+  &>section .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: const.$dull-white;
+  }
+
+  // search bar
+  &>section>div {
+    display: flex;
+    flex-direction: row;
+
+    article:first-child {
+      flex: 1;
+      margin-right: 1rem;
+    }
+
+    article img {
+      margin-right: 0.5rem;
+    }
+  }
+
+  // Header content
+  &>section>article:nth-child(2) {
+    margin-top: 1rem;
+
+    img {
+      height: 220px;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: .75rem;
+      margin-left: -0.75rem;
+    }
+
+    &>div {
+      padding: 0 3rem;
+    }
+
+    &>div>div {
+      margin-top: 1rem;
+
+      .btn-outline {
+        margin-left: 0.5rem;
+      }
+    }
+
+    h3 {
+      color: const.$white;
+      font-size: 1.5rem;
+    }
+
+  }
+
+  // list items
+  &>section>article:nth-child(3) {
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,40 @@
+@use "./constants"as const;
+
+.icon-default {
+  width: 1rem;
+  height: 1rem;
+}
+
+.pd-4 {
+  padding: 0.5rem 0.75rem;
+}
+
+.pd-8 {
+  padding: 1rem 1.5rem;
+}
+
+.pd-16 {
+  padding: 1.5rem 2rem;
+}
+
+.container {
+  background-color: const.$indigo;
+  border-radius: 1.2rem;
+  padding: 0.75rem 1.5rem;
+}
+
+
+.btn-solid {
+  background-color: #008bf7;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  color: const.$white;
+}
+
+.btn-outline {
+  border: 1px solid #008bf7;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  background-color: transparent;
+  color: const.$white;
+}

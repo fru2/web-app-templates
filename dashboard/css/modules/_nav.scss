@@ -1,0 +1,32 @@
+@use "../constants"as const;
+
+nav {
+  padding: 2rem;
+  background-color: const.$black;
+
+  &>h3 {
+    color: const.$white;
+  }
+
+  li {
+    margin: 2rem -2rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: const.$dull-white;
+
+    img {
+      margin-right: 0.5rem;
+    }
+  }
+
+  li:first-child {
+    margin-top: 2rem;
+  }
+
+  li+li {
+    margin-top: 0.5rem;
+  }
+
+}
