@@ -2,19 +2,23 @@
 
 // FIXME: Use class or id selector instead of deep nested selectors. 
 
-// SECTION 1 ---------------------------
 main {
   padding: 2rem;
+}
 
-  &>section .container {
+// SECTION 1 ---------------------------
+
+#section1 {
+  & .container {
     display: flex;
     flex-direction: row;
     align-items: center;
     color: const.$dull-white;
   }
 
+
   // search bar
-  &>section>div {
+  &>div {
     display: flex;
     flex-direction: row;
 
@@ -28,8 +32,9 @@ main {
     }
   }
 
+
   // Header content
-  &>section>article:nth-child(2) {
+  &>article:nth-child(2) {
     margin-top: 1rem;
 
     img {
@@ -59,8 +64,169 @@ main {
 
   }
 
-  // list items
-  &>section>article:nth-child(3) {
+
+  // List items
+  &>article:nth-child(3) {
     margin-top: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    // justify-content: baseline;
+
+
+    div {
+      // min-width: 110px;
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    div>img {
+      margin-right: 0.5rem;
+    }
+
   }
+
+
+}
+
+
+
+
+// SECITON 2 ---------------------------
+
+
+#section2 {
+
+  &>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2rem;
+
+    div {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    span {
+      margin-left: 1rem;
+      margin-top: 0.15rem;
+      color: const.$dull-white;
+    }
+
+    .btn-solid {
+      height: 3rem;
+      width: 3rem;
+      border: none;
+      border-radius: 50%;
+      background-color: const.$indigo;
+    }
+
+    .btn-solid+.btn-solid {
+      margin-left: 0.5rem;
+    }
+  }
+
+  #live-auction {
+    display: flex;
+    flex-direction: row;
+    // max-width: 500px;
+    margin-top: 0.5rem;
+    overflow-x: auto;
+  }
+
+
+
+
+  // Card elements
+  .card-element {
+    padding: 0.75rem;
+    width: fit-content;
+
+    &>div:first-child {
+      position: relative;
+      height: 220px;
+      width: 220px;
+
+      &>img {
+        position: absolute;
+        height: 220px;
+        width: 220px;
+        border-radius: 0.75rem;
+        object-fit: cover;
+      }
+
+      button {
+        right: 0;
+        top: 0;
+        height: 2.2rem;
+        width: 2.2rem;
+        padding: 0.5rem;
+        position: absolute;
+        background-color: #20212c6c;
+        border: none;
+        border-radius: 50%;
+        margin: 1rem;
+      }
+
+    }
+
+    &>div:nth-child(2) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0.75rem 0;
+
+      img {
+        height: 2.2rem;
+        width: 2.2rem;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      div {
+        margin-left: 0.5rem;
+      }
+
+      p:nth-child(2) {
+        color: const.$dull-white;
+        margin-top: -0.2rem;
+        font-size: 0.8rem;
+      }
+
+    }
+
+    hr {
+      border-color: #7f869452;
+    }
+
+    &>div:nth-child(4) {
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      span {
+        font-size: 0.8rem;
+        color: const.$dull-white;
+      }
+
+    }
+
+
+  }
+
+  .card-element+.card-element {
+    margin-left: 0.75rem;
+  }
+
 }
