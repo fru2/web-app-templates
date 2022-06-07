@@ -1,0 +1,105 @@
+@use "../constants"as const;
+
+aside {
+  padding: 2rem;
+
+  &>div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #overview {
+    margin-top: 1rem;
+
+    &>div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    span {
+      color: const.$dull-white;
+    }
+
+    h4 {
+      font-size: 2rem;
+      font-weight: 400;
+      margin: 0.25rem 0;
+    }
+
+    p {
+      width: max-content;
+      font-size: 0.8rem;
+      color: #008bf7;
+    }
+
+    &>img {
+      width: 15vw;
+      margin-top: 1rem;
+    }
+
+  }
+
+  section>div {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    button {
+      background-color: transparent !important;
+    }
+  }
+
+  .profile-list>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+      height: 2.2rem;
+      width: 2.2rem;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0.5rem;
+      margin-right: 2rem;
+
+      p {
+        width: max-content;
+      }
+
+      span {
+        color: const.$dull-white;
+        margin-top: -0.2rem;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .profile-list {
+    div+div {
+      margin-top: 1rem;
+      border-top: 1px solid #7f869452;
+      padding-top: 0.5rem;
+    }
+  }
+
+  button {
+    background-color: const.$indigo !important;
+    border: none;
+  }
+}

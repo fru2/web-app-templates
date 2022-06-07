@@ -24,6 +24,9 @@
 }
 
 
+
+// BUTTON STYLES
+
 .btn-solid {
   background-color: #008bf7;
   border-radius: 0.75rem;
@@ -37,4 +40,10 @@
   padding: 0.75rem 1rem;
   background-color: transparent;
   color: const.$white;
+}
+
+.btn-text {
+  background-color: transparent;
+  border: none;
+  color: #008bf7;
 }

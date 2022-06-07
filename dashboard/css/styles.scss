@@ -2,6 +2,20 @@
 @use "./constants"as const;
 @use "./global-styles";
 
+
+:root {
+  ::-webkit-scrollbar {
+    background-color: const.$dull-black;
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #5a5c6e;
+    border-radius: 0.5rem;
+  }
+}
+
 html {
   font-family: 'Poppins', sans-serif;
   background-color: const.$dull-black;
@@ -20,10 +34,15 @@ body {
   overflow: hidden;
 }
 
+
 main {
-  // flex: 1;
   max-width: 100%;
   overflow-x: hidden;
   overflow-y: auto;
   max-height: 90vh;
+}
+
+aside {
+  overflow-y: scroll;
+  height: 90vh;
 }
