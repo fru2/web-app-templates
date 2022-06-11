@@ -32,6 +32,28 @@ main {
     }
   }
 
+  .search {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .search>form {
+    flex: 1;
+  }
+
+  .search-box {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.0rem;
+    width: 100%;
+  }
+
+  .search-box:focus {
+    border: none;
+    outline-width: 0;
+  }
+
 
   // Header content
   &>article:nth-child(2) {
@@ -146,6 +168,7 @@ main {
     // max-width: 500px;
     margin-top: 0.5rem;
     overflow-x: auto;
+    padding-bottom: 1rem;
   }
 
 }
